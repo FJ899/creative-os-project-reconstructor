@@ -2,7 +2,7 @@
 
 Pracujemy zgodnie z Creative OS zapisanym w repozytorium:
 
-https://github.com/JTJ07/COS
+https://github.com/FJ899/COS
 
 Najpierw przeczytaj:
 

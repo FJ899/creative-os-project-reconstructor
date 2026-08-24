@@ -28,7 +28,8 @@ REQUIRED_FILES = [
     ".github/pull_request_template.md",
 ] + TEST_FILES
 
-CANONICAL_COS_LOCATOR = "https://github.com/JTJ07/COS"
+CANONICAL_COS_LOCATOR = "https://github.com/FJ899/COS"
+PRE_TRANSFER_COS_LOCATOR = "https://github.com/JTJ07/COS"
 HISTORICAL_COS_LOCATOR = "https://github.com/litrgratis-pixel/COS"
 
 
@@ -110,6 +111,8 @@ def check_prompt_contract() -> None:
 
     if CANONICAL_COS_LOCATOR not in prompt:
         fail(f"PROMPT_STARTOWY.md nie wskazuje current canonical COS locator: {CANONICAL_COS_LOCATOR}")
+    if PRE_TRANSFER_COS_LOCATOR in prompt:
+        fail(f"PROMPT_STARTOWY.md nadal używa pre-transfer current COS locatora: {PRE_TRANSFER_COS_LOCATOR}")
     if HISTORICAL_COS_LOCATOR in prompt:
         fail(f"PROMPT_STARTOWY.md nadal używa historycznego COS locatora: {HISTORICAL_COS_LOCATOR}")
 
